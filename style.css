@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-width: 1024px;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#weather {
+  position: absolute;
+  padding: 20px;
+  right: 0;
+  color: white;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 5rem;
+  margin: auto auto;
+  text-align: center;
+}
+
+.clock {
+  font-size: 15rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.user_name {
+  font-size: 50px;
+  text-align: center;
+}
+
+.user_input {
+  width: 20rem;
+  font-size: 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+::placeholder {
+  color: white;
+  font-size: 20px;
+}
+
+.paragraph {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-style: italic;
+  line-height: 35px;
+}
+
+.text {
+  color: whitesmoke;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.author {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+  font-style: italic;
+}
+
+.todo_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgb(165, 160, 160); */
+}
+
+button {
+  position: absolute;
+  right: 30%;
+  font-size: x-large;
+  background-color: transparent;
+  /* outline: none; */
+  border: transparent;
+}
+
+.todo_input {
+  width: 20rem;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+#greeting {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  .clock {
+    font-size: 7rem;
+  }
+  #greeting {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .clock {
+    font-size: 3rem;
+  }
+
+  #greeting {
+    font-size: 20px;
+  }
+
+  .container {
+    padding-top: 100px;
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .todo_input {
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  ::placeholder {
+    font-size: 7px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  .author {
+    font-size: 10px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+  button {
+    font-size: 10px;
+  }
+}
